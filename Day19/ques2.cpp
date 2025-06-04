@@ -1,8 +1,4 @@
-#include <iostream>
-#include <stack>
-#include <unordered_map>
-#include <vector>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 
 class stackfrequency
