@@ -10,7 +10,7 @@ vector<int> fun(string s, string p)
     vector<int> pc(26, 0), wc(26, 0);
     int m = p.size(), n = s.size();
 
-    for (int i = 0; i < m; ++i)
+    for (int i = 0; i < m; i++)
     {
         pc[p[i] - 'a']++;
         wc[s[i] - 'a']++;
@@ -19,7 +19,7 @@ vector<int> fun(string s, string p)
     if (pc == wc)
         res.push_back(0);
 
-    for (int i = m; i < n; ++i)
+    for (int i = m; i < n; i++)
     {
         wc[s[i] - 'a']++;
         wc[s[i - m] - 'a']--;
